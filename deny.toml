@@ -2,16 +2,16 @@
 # https://embarkstudios.github.io/cargo-deny/
 
 [advisories]
+version = 2
 db-path = "~/.cargo/advisory-db"
 db-urls = ["https://github.com/rustsec/advisory-db"]
-vulnerability = "deny"
 yanked = "warn"
-notice = "warn"
 ignore = []
 
 [licenses]
-unlicensed = "deny"
+version = 2
 # List of explicitly allowed licenses
+# With version 2, all licenses are denied unless explicitly allowed here
 allow = [
     "MIT",
     "Apache-2.0",
@@ -21,20 +21,6 @@ allow = [
     "ISC",
     "Unicode-DFS-2016",
 ]
-# List of explicitly disallowed licenses
-deny = [
-    "GPL-2.0",
-    "GPL-3.0",
-    "AGPL-3.0",
-    "LGPL-2.1",
-    "LGPL-3.0",
-]
-# Lint level for licenses considered copyleft
-copyleft = "deny"
-# Blanket approval or denial for OSI-approved or FSF Free/Libre licenses
-allow-osi-fsf-free = "neither"
-# Lint level used when no other predicates are matched
-default = "deny"
 # The confidence threshold for detecting a license from license text
 confidence-threshold = 0.8
 
