@@ -54,10 +54,9 @@ confidence-threshold = 0.8
 
 # Allow specific crates with LGPL that are used only at build time or are essential
 [[licenses.exceptions]]
-allow = ["LGPL-2.1-or-later"]
 name = "r-efi"
 version = "*"
-reason = "Used only for UEFI abstractions, not linked in final binary"
+allow = ["LGPL-2.1-or-later"]
 
 [licenses.private]
 # If true, ignores workspace crates that aren't published
