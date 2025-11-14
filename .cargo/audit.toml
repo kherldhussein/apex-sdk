@@ -29,13 +29,6 @@ ignore = [
     # Mitigation: Same as RUSTSEC-2025-0009 - Alloy migration
     "RUSTSEC-2025-0010",
 
-    # derivative 2.2.0 unmaintained (RUSTSEC-2024-0388)
-    # Source: alloy-primitives -> ruint -> ark-ff -> derivative
-    # Type: Compile-time derive macro only
-    # Risk: None - no runtime security implications
-    # Note: Monitoring upstream for alternatives
-    "RUSTSEC-2024-0388",
-
     # fxhash 0.2.1 unmaintained (RUSTSEC-2025-0057)
     # Source: ethers-providers -> hashers -> fxhash
     # Type: Hash function optimization
@@ -49,13 +42,6 @@ ignore = [
     # Risk: None - no security vulnerabilities
     # Mitigation: Resolved with Alloy migration
     "RUSTSEC-2024-0384",
-
-    # paste 1.0.15 unmaintained (RUSTSEC-2024-0436)
-    # Source: alloy-primitives -> ark-ff -> paste
-    # Type: Compile-time procedural macro
-    # Risk: None - no runtime implications
-    # Note: Monitoring upstream for alternatives
-    "RUSTSEC-2024-0436",
 ]
 
 [database]
