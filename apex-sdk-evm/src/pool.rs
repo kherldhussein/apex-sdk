@@ -159,9 +159,11 @@ impl ConnectionPool {
                     tracing::warn!("Failed to connect to endpoint {}: {}", endpoint, e);
                     // Create unhealthy connection
                     let adapter = EvmAdapter::connect(endpoint).await?;
-                    let mut health = EndpointHealth::default();
-                    health.is_healthy = false;
-                    health.failure_count = 1;
+                    let health = EndpointHealth {
+                        is_healthy: false,
+                        failure_count: 1,
+                        ..Default::default()
+                    };
 
                     let conn = PooledConnection {
                         adapter: Arc::new(adapter),
