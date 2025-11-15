@@ -161,7 +161,7 @@ async fn main() -> Result<()> {
     println!("\n  Attributes:");
     println!("    Name: Digital Sunset #1");
     println!("    Description: A beautiful sunset on Kusama");
-    println!("    Creator: Alice");
+    println!("    Creator: Ilara");
     println!("    Rarity: Legendary");
 
     // Example 5: Bridge Security Features

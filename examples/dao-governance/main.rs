@@ -266,7 +266,7 @@ async fn main() -> Result<()> {
     println!("    Pending: 3 (7%)");
 
     println!("\n  Top Contributors:");
-    println!("    1. Alice (Polkadot): 15 proposals");
+    println!("    1. Ilara (Polkadot): 15 proposals");
     println!("    2. Bob (Ethereum): 12 proposals");
     println!("    3. Charlie (Multi-chain): 8 proposals");
 

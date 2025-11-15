@@ -9,6 +9,7 @@
 use apex_sdk::prelude::*;
 
 #[tokio::main]
+#[allow(clippy::result_large_err)]
 async fn main() -> Result<()> {
     // Initialize tracing for better logging
     tracing_subscriber::fmt::init();
