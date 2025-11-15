@@ -10,10 +10,11 @@ homepage.workspace = true
 documentation.workspace = true
 keywords = ["blockchain", "evm", "ethereum", "web3", "sdk"]
 categories = ["cryptography::cryptocurrencies", "api-bindings"]
+readme = "README.md"
 
 [dependencies]
-apex-sdk-core = { path = "../apex-sdk-core", version = "0.1.0" }
-apex-sdk-types = { path = "../apex-sdk-types", version = "0.1.0" }
+apex-sdk-core = { path = "../apex-sdk-core", version = "0.1.1" }
+apex-sdk-types = { path = "../apex-sdk-types", version = "0.1.1" }
 tokio = { workspace = true }
 async-trait = { workspace = true }
 thiserror = { workspace = true }

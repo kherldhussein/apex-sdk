@@ -10,6 +10,7 @@ homepage.workspace = true
 documentation.workspace = true
 keywords = ["blockchain", "types", "substrate", "evm", "cross-chain"]
 categories = ["cryptography::cryptocurrencies", "data-structures"]
+readme = "README.md"
 
 [dependencies]
 serde = { workspace = true }
