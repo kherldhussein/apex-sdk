@@ -317,7 +317,7 @@ impl SubstrateAdapter {
                         }
                     }
 
-                    let confirmations = (latest_number - block_num) as u32;
+                    let confirmations = latest_number - block_num;
 
                     return if success {
                         Ok(TransactionStatus::Confirmed {

@@ -14,10 +14,11 @@ use tokio::time::sleep;
 use tracing::{debug, info, warn};
 
 /// Batch transaction execution mode
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum BatchMode {
     /// Batch calls optimistically - continue even if some fail
     /// Uses `Utility::batch`
+    #[default]
     Optimistic,
     /// All-or-nothing batch - revert all if any fails
     /// Uses `Utility::batch_all`
@@ -25,12 +26,6 @@ pub enum BatchMode {
     /// Force batch - always succeeds, marks failed calls
     /// Uses `Utility::force_batch`
     Force,
-}
-
-impl Default for BatchMode {
-    fn default() -> Self {
-        Self::Optimistic
-    }
 }
 
 /// Represents a single call in a batch transaction

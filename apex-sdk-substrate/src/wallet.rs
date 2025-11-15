@@ -16,18 +16,13 @@ use std::sync::Arc;
 use tracing::{debug, info};
 
 /// Supported key pair types
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum KeyPairType {
     /// SR25519 (Schnorrkel) - Default for Substrate
+    #[default]
     Sr25519,
     /// ED25519 - Alternative signing algorithm
     Ed25519,
-}
-
-impl Default for KeyPairType {
-    fn default() -> Self {
-        Self::Sr25519
-    }
 }
 
 /// A unified wallet that can hold either SR25519 or ED25519 keys

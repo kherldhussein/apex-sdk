@@ -35,20 +35,15 @@ use subxt::{OnlineClient, PolkadotConfig};
 use tracing::{debug, info};
 
 /// XCM version to use for message construction
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum XcmVersion {
     /// XCM version 2
     V2,
     /// XCM version 3 (recommended)
+    #[default]
     V3,
     /// XCM version 4 (latest)
     V4,
-}
-
-impl Default for XcmVersion {
-    fn default() -> Self {
-        Self::V3
-    }
 }
 
 /// Type of XCM transfer to perform
