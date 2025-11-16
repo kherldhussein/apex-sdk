@@ -407,8 +407,8 @@ mod tests {
             source_tx_hash: "0xabc123".to_string(),
             destination_tx_hash: Some("0xdef456".to_string()),
             status: TransactionStatus::Confirmed {
-                block_number: 12345,
-                confirmations: 3,
+                block_hash: "0xblock123".to_string(),
+                block_number: Some(12345),
             },
             block_number: Some(12345),
             gas_used: Some(21000),
