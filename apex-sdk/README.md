@@ -132,7 +132,7 @@ use apex_sdk::EvmAdapter;
 // Multi-chain EVM support
 let ethereum = EvmAdapter::new("https://eth.llamarpc.com");
 let polygon = EvmAdapter::new("https://polygon-rpc.com");  
-let bsc = EvmAdapter::new("https://bsc-dataseed.binance.org");
+let bsc = EvmAdapter::new("https://bsc.publicnode.com");
 
 // DeFi operations
 let uniswap = ethereum.defi().uniswap_v3();
@@ -204,7 +204,6 @@ let eth_pool = EvmAdapter::with_pool(
     vec![
         "https://eth.llamarpc.com",
         "https://eth.rpc.blxrbdn.com",
-        "https://ethereum.blockpi.network/v1/rpc/public",
     ],
     pool_config,
 ).await?;
@@ -430,7 +429,7 @@ Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for detai
 
 ## Acknowledgments
 
-- [Substrate](https://substrate.io/) - Blockchain framework for Polkadot ecosystem
+- [Substrate](https://docs.polkadot.com/) - Blockchain framework for Polkadot ecosystem
 - [ethers-rs](https://github.com/gakonst/ethers-rs) - Ethereum library for Rust
 - [subxt](https://github.com/paritytech/subxt) - Substrate RPC client
 - [tokio](https://tokio.rs/) - Asynchronous runtime for Rust

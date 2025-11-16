@@ -502,6 +502,6 @@ Contributions are welcome! Please read [CONTRIBUTING.md](../CONTRIBUTING.md) for
 ## Support
 
 - [Documentation](https://docs.rs/apex-sdk-substrate)  
-- [Substrate Documentation](https://docs.substrate.io)
-- [Polkadot Documentation](https://wiki.polkadot.network)
+- [Substrate Documentation](https://docs.polkadot.com)
+- [Polkadot Documentation](https://wiki.polkadot.com)
 - [GitHub Issues](https://github.com/kherldhussein/apex-sdk/issues)
